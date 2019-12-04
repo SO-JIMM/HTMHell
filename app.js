@@ -21,6 +21,10 @@ app.get('/elements', (req, res) => {
   res.render('elements', {title: 'Elements'})
 })
 
+app.get('/text-content', (req, res) => {
+  res.render('textContent', { title: 'textContent'})
+})
+
 app.listen(port, () => {
   console.log('Server is up on port ' + port)
 })
