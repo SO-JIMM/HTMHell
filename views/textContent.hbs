@@ -1,5 +1,16 @@
 <h1>textContent vs. innerHTML</h1>
 
+<h2>Summary:</h2>
+
+<ul>
+  <li>innerHTML parses content as HTML, so it takes longer.</li>
+  <li>nodeValue uses straight text, does not parse HTML, and is faster.</li>
+  <li>textContent uses straight text, does not parse HTML, and is faster.</li>
+  <li>innerText Takes styles into consideration. It won't get hidden text for
+    instance.</li>
+  <li>innerText didn't exist in firefox until FireFox 45 according to caniuse
+    but is now supported in all major browsers.</li>
+  </ui>
 
 
-<script src="/js/textContent.js"></script>
+  <script src="/js/textContent.js"></script>

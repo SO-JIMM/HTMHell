@@ -25,6 +25,18 @@ app.get('/text-content', (req, res) => {
   res.render('textContent', { title: 'textContent'})
 })
 
+app.get('/events', (req, res) => {
+  res.render('events', {title: 'Events'})
+})
+
+app.get('/selectors', (req, res) => {
+  res.render('selectors', {title: 'Selectors'})
+})
+
+app.get('/todo', (req, res) => {
+  res.render('todo', {title: 'Todo'})
+})
+
 app.listen(port, () => {
   console.log('Server is up on port ' + port)
 })
